@@ -1,0 +1,192 @@
+---
+title: "Tablets for Textbooks in Schools"
+subtitle: ""
+author: "Leif Gio Villanueva & Jen Jerome Dela Pena"
+institute: "Technological University of the Philippines"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable()
+```
+# Tablet for learning
+
+???
+For Philippine schools, even for private ones catering to children of the well-to-do families, the so-called Tablet-for-learning is still futuristic. Given, however, the recognized impact of technology in education, the future may not be too far away.
+---
+# Books for instruction
+
+.pull-left[
+## Advantages
+
+- .can-edit[
+
+]
+]
+
+.pull-right[
+## Disadvantages
+
+- .can-edit[
+
+]
+]
+
+???
+primary medium of instruction in most schools.
+
+It is doubtful if these will totally be replaced by digital technology reading tools, but there are now perceptions that virtual literacy may very well ease out textual print literacy.
+
+# Advantages
+
+- Strategic learning
+
+- They provide structure and a syllabus for a program.
+
+- standardize instruction
+
+- easier for new teachers
+
+- saves time of the teachers
+
+# Disadvantages
+
+- heavy
+
+- outdated information
+ 
+- In developing countries, one-book for every student is still a goal, not a reality.
+
+- cost ineffective 
+
+- too many publishing errors
+
+---
+# Technology as a savior
+
+???
+Today, technology is being viewed as a savior. 
+
+Given the fact that students are enamored by computer games which take much of their time at home, 
+educators have begun to think that the computer screen can very well serve as a powerful educational medium.
+
+Already computer games have been adopted in developed countries as a learning technology 
+along with other audio-visual aids to teaching-and-learning. 
+
+Classroom instruction which rides the vehicle of gaming admittedly makes make learning more effective and more fun. 
+
+From studies, educational video gaming has been shown to inculcate competencies 
+that relate to learning concentration, lasting memory recall and higher visual literacy.
+
+---
+# De La Salle Experience
+
+
+???
+In De La Salle School, the future is now. Administrators, teachers, parents and other stakeholders have met to discuss the use of Tablets as a primary learning tool to replace the textbook. 
+
+It was argued that young students carry many heavy books to school, which can be physically burdensome. 
+
+The effectiveness of book print also wanes in comparison with the visual images school children have become used to after the advent of television, video and computer gaming. 
+
+In developed countries gaming is today accepted as a learning technology, and surveys have shown its effectiveness in terms of mental concentration, memory retention and closer-to-life experiential learning. 
+
+Information technology product manufacturers have given the De La Salle school support by way of customized Tablet designs that are conducive to higher thinking, constructive and participative teaching-and-learning.
+
+As to costs, parents gave full support to the IT advancement and expressed willingness to cover cost through reasonable IT fees. Developing softwares using the Tablet will entail the participation of teachers who will have to be trained in preparing interactive, graphically-rich, and effective learning modules. This won't be a problem as teachers wish to assume the new role of teachers for a digital generation.
+
+---
+
+# Your turn
+
+.pull-left[Assume yourself asking a birthday gift from your parents. There is a choice between asking for a Laptop or an iPad/Tablet. Share your thoughts considering the features of these new technology devices.]
+
+---
+.pull-left[
+### Laptop	
+
+Portable w/ hardware included in product
+
+Full keyboard for easy, accurate encoding	
+
+Full screen for viewing, browsing, enjoying entertainment content
+
+Heavy weight (3-9 lbs.)	
+]
+
+.pull-right[
+### Ipad/Tablet
+
+Small, portable and light (1 b.)
+
+Full control of screen and applications
+
+Touch screen with stylus or fingers
+
+Durable but touch screen can scratch, damage screen display
+
+Can store all your music, photos, videos
+
+Built-in flash camera	
+
+Built-in eReader to read books]
+
+---
+# Tablets for schools
+
+Use of tablets in public schools in the country may be
+difficult considering certain factors: 
+
+--
+
+- Cost of one tablet for one student.
+
+--
+
+- Books have more durability compared with electronic gadgets.
+
+--
+
+- Technical expertise for the learning software is not widely available.
+Research studies show that using tablets improves computer skills and encourages independent thinking.
+
+???
+Conditions in Philippine education show youths in far-flung areas not reached, number of classrooms and facilities inadequate, quality of work life of teachers below standards. Embarking in technology in education may appear problematic, but systems management may still resolve many problems. Technology itself may be a key to problem resolution and Filipino ingenuity is called to respond to the challenge facing the digital generation of the millennium.
+---
+# Tablets
+
+.panelset[
+.panel[.panel-name[advantages]
+- Increased Engagement and Participation
+
+- The Ability to “Go Green”
+
+- Never-Ending Resources
+
+- It’s Cost Effective
+
+- It’s a Great Communication Tool
+]
+.panel[.panel-name[disadvantages]
+- Can Lead to Distraction
+
+- Internet Connection and Security Concerns
+
+- Options can be Overwhelming
+
+- Students Need Less Screen time
+]
+]
