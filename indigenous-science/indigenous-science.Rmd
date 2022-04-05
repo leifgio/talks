@@ -1,0 +1,67 @@
+---
+title: "Indigenous Science and Technology in the Philippines"
+date: 'April 7, 2022'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+# Activating Prior Knowledge
+
+What is the past lesson all about?
+
+--
+
+Key take away from previous discussion?
+
+---
+
+# Outline
+
+Indigenous Knowledge System
+
+- definition
+
+- examples
+
+Indigenous Science
+
+- Definition
+
+- Scope
+
+- Beliefs
+
+- Understanding Indigenous Science
+
+- Familiarizing with Indigenous Science
+
+- Applications
