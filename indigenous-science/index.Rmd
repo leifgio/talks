@@ -326,15 +326,9 @@ They have a responsibility to preserve it.
  
  - Ethno-biology
  
- --
- 
  - Ethno-medicine
  
- --
- 
  - Indigenous farming methods
- 
- --
  
  - Folk Astronomy
  
@@ -354,3 +348,44 @@ everyday life.
 UNESCO's Declaration on Science and the Use of Scientific Knowledge
 (1999) recognized indigenous science as a historical and valuable contribution to
 science and technology.
+
+---
+
+# Generalization
+
+This lesson discussed the concept of indigenous knowledge and its influence to
+the development of indigenous science. The communities in the Philippines have
+maintained vast amounts of indigenous knowledge, cultural practices, traditions, and
+beliefs. These include beliefs and practices ranging from different areas such as health,
+environment, peace and order, agriculture, food production, astronomy, music, and
+literature. The indigenous knowledge system of the people served as the foundation for
+the development of indigenous science.
+
+Even before the time of the Spanish colonization in the Philippines, various
+people and communities already practiced science. They invented tools and built
+structures, studied the medicinal uses of plants, observed heavenly bodies to predict
+seasons and weather, and used indigenous science in agriculture. These are considered
+indigenous science, which is one of the foundations of modern science.
+
+
+---
+
+# Activity
+
+Direction: Group yourselves into three and make a short podcast answering the following
+questions:
+
+1. What is the role of indigenous knowledge in the development of indigenous science?
+
+2. What is the role of indigenous science in the development of science and technology in
+the Philippines?
+
+3. How do society and culture influence the development of science and technology?
+
+---
+
+# References
+
+Serafica, J. P. J., Caslib , B. N., & Alata, E. J. P. (2007). Chapter 1 : Indigenous Science and
+Technology in the Philippines. In G. T. Pawilen (Ed.), Science, Technology, and Society
+(First, pp. 42-47). essay, Rex Bookstore Inc.
