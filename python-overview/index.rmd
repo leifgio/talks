@@ -1,0 +1,63 @@
+---
+title: "Overview in Python"
+subtitle: ""
+author: "Leif Gio Villanueva"
+date: "July 20, 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+# What is Python
+
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). 
+
+---
+# Why to learn Python3?
+Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable.
+
+Uses english keywords and fewer syntactical constructions
+
+- Python is interpreted
+- Interactive
+- Object Oriented
+- Beginner Friendly
+
+---
+# Famous software that uses python
+- Pinterest
+- Spotify
+- Facebook
+
+---
+# Characteristics of Python
+- Object oriented language
+- Scripting language
+- high-level dynamic
+- supports automatic garmage collection
+
+---
+## Syntax:
+
+```python
+print("hello world")
+```
+Output: 
+
+hello world
+
+---
+# Applications of python
+- Easy to learn
+- Easy to read
+- Easy to maintain
+- Interactive mode
+- Portable
+- Extendable
+- Databases
+- GUI Programming
+- Scalable
