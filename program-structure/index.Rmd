@@ -151,8 +151,27 @@ The false statement s #1. A program with syntax errors cannot execute; a program
 ]
 
 ---
+# Parts of Programming logic
+1. input
+
+1. process
+
+1. output
+
+1. variables
+
+1. decisions
+
+1. loops
+```
+while my_number is greater than 100
+    print enter a number less than 100
+    input my_number
+```
+---
+
 # Writing Pseudocode
-1. use imperative form of verbs(set, input, output, print, compute, start, stop)
+1. use imperative form of verbs(set, input, read, output, print, compute, start, stop)
 
 1. a single line must be an input, process or output.
 
@@ -160,15 +179,16 @@ The false statement s #1. A program with syntax errors cannot execute; a program
 
 1. focus on the readability
 
+1. Use appropriate sentence casings, such as CamelCase for methods, upper case for constants and lower case for variables.
+
 1. use indentations to show structure
+
 ```
 if crush ka ng crush mo then
-  print sana all
+    print sana all
 else
-  print ouch
+    print ouch
 ```
-
-1. Use appropriate sentence casings, such as CamelCase for methods, upper case for constants and lower case for variables.
 ---
 # Pseudo code for getting the sum of two input
 ```
@@ -181,11 +201,12 @@ print answer
 # Pseudo code for converting dollar to peso
 ```
 set one_dollar = 50
+print enter the dollar amount you want to convert to peso
 input dollar_amount
 compute peso = dollar_amount * one dollar
 print peso
 ```
-
+---
 # Activity
 
 Write a pseudo code that ask for the temperature in celsius then output the farenheit value
@@ -193,7 +214,37 @@ Write a pseudo code that ask for the temperature in celsius then output the fare
 .can-edit[Write your answer here]
 
 ---
+# Answer
 
+```
+print enter the celsius value
+input my_celsius
+set farenheit_value = (celsius * 1.8) + 32
+print my_celsius when converted to farenheit is farenheit_value
+```
+---
+# Flowchart and Pseudocode
+**Flowchart** represents an algorithm using diagram
+
+**Pseudocode** is an informal way of writing a program
+---
+# Flowchart and Pseudocode
+
+.pull-left[
+**Flowchart**
+![flowchart](flow.png)
+]
+.pull-right[
+**Pseudocode**
+```
+input marks
+is mark greater than 50
+  print pass
+else
+  print fail
+```
+]
+---
 # Two truths and a lie
 1. Understanding the problem that must be solved can be one of the most difficult
 aspects of programming.
