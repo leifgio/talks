@@ -14,6 +14,9 @@ output:
 ```{r xaringan-editable, echo=FALSE}
 xaringanExtra::use_editable(expires = 1)
 ```
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
 
 # Understanding Computer systems
 
