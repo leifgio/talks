@@ -50,7 +50,7 @@ the hardware component that performs processing
 
 ---
 
-# Basics of programming
+# Background in programming
 you write computer instructions in a computer using **programming language**
 
 every programming language has own rules, keywords and punctuation. these are called **syntax**
