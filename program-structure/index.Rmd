@@ -1,0 +1,179 @@
+---
+title: "Intro to Logic and Design"
+author: "Leif Gio Villanueva"
+date: "July 21, 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+# Understanding Computer systems
+
+**Hardware**
+
+is the physical device, it may be input or output device
+
+**Software**
+
+computer instructions that tell computers what to do
+
+**Application Software**
+
+**System software**
+
+---
+
+# Important terms
+**Input**
+
+data items enter the computer system and placed in memory
+
+**Process**
+
+may invlove organizing or sorting inputs
+
+**Output**
+
+the result of processed data
+
+**Central Processing Unit**
+
+the hardware component that performs processing
+
+---
+
+# Basics of programming
+you write computer instructions in a computer using **programming language**
+
+every programming language has own rules, keywords and punctuation. these are called **syntax**
+
+computer instructions or program are stored in the **RAM** for quick access
+
+RAM is **volatile**, hard disks are **nonvolatile**
+
+a program typed using programming language must be translated to machine langage(binary). millions of on and off circuits
+
+your programming language statements are called **source code**
+
+Each programmaing language may be an **compiled-language** or **interpreted language**
+
+---
+
+# Two truths and a lie
+
+1. Hardware is the equipment, or the devices, associated with a computer. Software is computer instructions.
+
+1. The grammar rules of a computer programming language are its syntax.
+
+1. You write programs using machine language, and translation software converts the statements to a programming language.
+
+---
+
+# Answer 
+
+The false statement is #3. You write programs using a programming language such
+as Visual Basic or Java, and a translation program (called a compiler o interpreter)
+converts the statements to machine language, which is Os and 1s.
+
+---
+
+# Understanding Simple Program Logic
+
+A program with no syntax error can be executed. but still contain logical errors
+
+you must develop a program with correct logic
+
+## How to make a cake with logical error
+```
+Get a bowl
+stir
+Add two eggs
+Add a gallon of gasoline
+Bake at 350 degrees for 45 minutes
+Add three cups of flour
+```
+
+---
+
+# Simple computer program written in english
+```
+input myNumber
+set myAnswer = myNumber * 2
+output myAnswer
+```
+input myNumber is example of input operation
+
+set myAnswer = myNumber * 2 is a process operation
+
+output myAnswer is a output operation
+
+myNumber is a **variable**
+
+variable is named in the memory location. in python: id(var)
+
+---
+
+# Two truths and a lie
+1. A program with syntax errors can execute but might produce incorrect results.
+
+1. Although the syntax of programming languages differs, the same program logic can be expressed in different languages.
+
+1. Most simple computer programs include steps that perform input, processing, and output.
+
+---
+
+# Answer
+
+The false statement s #1. A program with syntax errors cannot execute; a program with no syntax errors can execute, but might produce incorrect results.
+
+---
+
+# Understanding the Program Development Cycle
+.pull-left[
+1. Understand the problem.
+1. Plan the logic.
+1. Code the program.
+1. Use software (a compiler or interpreter) to translate the program into machine language.
+1. Test the program.
+1. Put the program into production.
+1. Maintain the program.
+]
+.pull-right[
+![my-image](life-cycle.png)
+]
+
+---
+# Activity
+
+Write a psuedo code that ask for the temperature in celsius then output the farenheit value
+
+.can-edit[Write your answer here]
+
+---
+
+# Two truths and a lie
+1. Understanding the problem that must be solved can be one of the most difficult
+aspects of programming.
+
+1. The two most commonly used logic-planning tools are flowcharts and
+pseudocode.
+
+1. Flowcharting a program is a very different process if you use an older
+programming language instead of a newer one.
+---
+#Answer
+The false statement is #3. Despite their differences, programming languages are
+quite alike in their basic capabilities—each can handle input operations, arithmetic
+processing, output operations, and other standard functions. The logic developed
+to solve a programming problem can be executed using any number of languages.
+
+
+
