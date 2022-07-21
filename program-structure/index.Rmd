@@ -17,7 +17,9 @@ xaringanExtra::use_editable(expires = 1)
 ```{r xaringan-scribble, echo=FALSE}
 xaringanExtra::use_scribble()
 ```
-
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
 # Understanding Computer systems
 
 **Hardware**
