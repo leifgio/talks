@@ -88,7 +88,7 @@ to a task, such as word-processing, spreadsheets, and games.
 
 System software: Comprises the programs that you use to
 manage your computer, such as Windows, Linux or Unix,
-Google Android and Apple 105,
+Google Android and Apple IOS,
 
 
 ---
@@ -109,7 +109,7 @@ language.
 Used to write computer instructions called program code.
 Writing instructions is called coding the program.
 
-Examples: C++, Java, or Python,
+Examples: C++, Java, or Python.
 
 ---
 
