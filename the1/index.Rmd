@@ -14,6 +14,9 @@ output:
       ratio: 16:9
 ---
 
+```{r xaringa-webcam, include = FALSE}
+xaringanExtra::use_webcam()
+```
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_mono_accent(
@@ -28,9 +31,6 @@ xaringanExtra::use_panelset()
 ```
 ```{r xaringan-scribble, echo=FALSE}
 xaringanExtra::use_scribble()
-```
-```{r}
-xaringanExtra::use_webcam()
 ```
 
 # Objectives
