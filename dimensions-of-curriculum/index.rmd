@@ -14,7 +14,7 @@ output:
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(base_color = "#23395b")
+style_mono_accent(base_color = "#fff")
 ```
 
 ```{r xaringan-panelset, echo=FALSE}
