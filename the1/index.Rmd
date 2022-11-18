@@ -1,8 +1,5 @@
 ---
 title: "Structured Programming: Introduction to Logic and Design"
-subtitle: "findings in the article"
-author: "Dianne April Valderama"
-institute: "Technological University of the Philippines"
 date: "November, 2022"
 output:
   xaringan::moon_reader:
@@ -23,7 +20,7 @@ style_mono_accent(
   base_color = "#23395b",
   header_font_google = google_font("Cabin"),
   text_font_google   = google_font("Noto Sans", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
+  code_font_google   = google_font("Fira Mono"),
 )
 ```
 ```{r xaringan-panelset, echo=FALSE}
@@ -91,12 +88,22 @@ Comprises the programs that you use to manage your computer, such as Windows, Li
 
 .panel[
 .panel-name[Input]
-Data items such as text, numbers, images, and sound.
+
+.pull-left[Data items such as text, numbers, images, and sound.
+]
+
+.pull-right[<img src="input.gif"  height="350rem"/>]
 ]
 
 .panel[
 .panel-name[Process]
+
+.pull-left[
 Calculations and comparisons performed by the central processing unit (CPU).
+]
+
+.pull-right[<img src="process.jpg"  height="350rem"/>]
+
 ]
 
 .panel[
@@ -105,7 +112,7 @@ Calculations and comparisons performed by the central processing unit (CPU).
 Resulting information that is sent to a printer, a monitor, or storage device after processing.
 ]
 
-.pull-right[<img src="speaker.png"  height="400rem"/>]
+.pull-right[<img src="output.jpg"  height="350rem"/>]
 ]
 
 ]
