@@ -145,26 +145,22 @@ open(file, mode="r")
 - *mode* has a default value of read in text
 ]
 
-.panel[
+.panel[.panel-name[File Parameter]
 ```{python, eval=FALSE}
 f = open("test.txt") # Open file in relative path
 f = open("/home/lab4/test.txt") # Open file in absolute path
 ```
+]
+
+.panel[
+.panel-name[File and Mode Parameter]
 Let us say we have a ***"test.txt"*** and ***"logo.png"*** in the current directory
 .panel-name[Example]
-```{python, eval=FALSE}
+```{python, eval=TRUE}
 f = open("test.txt", "w") # write in text mode
 print(f)
 f = open("logo.png", "rb") # read in binary mode
 print(f)
-```
-]
-
-.panel[
-.panel-name[Output]
-```{python, eval=FALSE}
-<_io.TextIOWrapper name='test.txt' mode='r' encoding='UTF-8'>
-<_io.BufferedReader name='input.png'>
 ```
 ]
 
@@ -194,7 +190,7 @@ try:
   f = open("test.txt", "r")
   # perform all file operations
 finally:
-  f.close
+  f.close()
 ```
 
 ]
@@ -202,7 +198,7 @@ finally:
 .panel[
 .panel-name[Best]
 ```{python, eval=FALSE}
-with open("test.txt", "r" as f:)
+with open("test.txt", "r") as f:
   # perform all file operations
 ```
 ]
@@ -220,19 +216,11 @@ file.name    # returns the name of the file
 ```
 
 .panel[.panel-name[Usage]
-```{python, eval=FALSE}
+```{python, eval=TRUE}
 with open("test.txt", "r") as f:
   print(f.closed)
   print(f.mode) 
   print(f.name)
-```
-]
-
-.panel[.panel-name[Output]
-```{python, eval=FALSE}
-False
-'r'
-'test.txt'
 ```
 ]
 
@@ -247,11 +235,15 @@ background-size: cover
 ---
 .panelset[
 
-.panel[.panel-name[Modes]
+.panel[.panel-name[Modes & Method]
 In order to write into a file we need to specify a mode.
 ```{python, eval=FALSE}
 "w" # write mode
 "a" # append mode
+```
+Writing a string is done using this method:
+```{python, eval=FALSE}
+write(n)  # The n parameter is the string to be written on the file.
 ```
 ]
 
@@ -345,13 +337,13 @@ readlines() # reads and returns a list of lines from a file
 .panel[.panel-name[read()]
 To read a file in Python, we must open the file in reading ***"r"*** mode.
 
-Code:
+**Code:**
 ```{python, eval=FALSE}
 with open("test.txt", "r") as f:
   message = f.read()
   print(message)
 ```
-Output:
+**Output:**
 ```yaml
 hello
 python is awesome
@@ -359,26 +351,26 @@ python is awesome
 ]
 
 .panel[.panel-name[readline()]
-Code:
+**Code:**
 ```{python, eval=FALSE}
 with open("test.txt", "r") as f:
   message = f.readline()
   print(message)
 ```
-Output:
+**Output:**
 ```yaml
 hello
 ```
 ]
 
 .panel[.panel-name[readlines()]
-Code:
+**Code:**
 ```{python, eval=FALSE}
 with open("test.txt", "r") as f:
   message = f.readlines()
   print(message)
 ```
-Output:
+**Output:**
 ```python
 ['hello\n', 'python is awesome\n']
 ```
