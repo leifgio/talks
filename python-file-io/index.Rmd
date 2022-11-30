@@ -157,7 +157,7 @@ f = open("/home/lab4/test.txt") # Open file in absolute path
 Let us say we have a ***"test.txt"*** and ***"logo.png"*** in the current directory
 .panel-name[Example]
 ```{python, eval=TRUE}
-f = open("test.txt", "w") # write in text mode
+f = open("test.txt", "r") # read in text mode
 print(f)
 f = open("logo.png", "rb") # read in binary mode
 print(f)
@@ -329,6 +329,8 @@ readlines() # reads and returns a list of lines from a file
 ]
 
 .panel[.panel-name[test.txt]
+Let us say in our ***"test.txt"*** we have:
+
 > hello
 
 >  python is awesome
@@ -337,42 +339,34 @@ readlines() # reads and returns a list of lines from a file
 .panel[.panel-name[read()]
 To read a file in Python, we must open the file in reading ***"r"*** mode.
 
-**Code:**
-```{python, eval=FALSE}
+```{python, eval=TRUE}
 with open("test.txt", "r") as f:
   message = f.read()
   print(message)
 ```
-**Output:**
-```yaml
-hello
-python is awesome
-```
 ]
 
 .panel[.panel-name[readline()]
-**Code:**
-```{python, eval=FALSE}
+```{python, eval=TRUE}
 with open("test.txt", "r") as f:
   message = f.readline()
   print(message)
 ```
-**Output:**
-```yaml
-hello
-```
 ]
 
 .panel[.panel-name[readlines()]
-**Code:**
 ```{python, eval=FALSE}
 with open("test.txt", "r") as f:
   message = f.readlines()
   print(message)
 ```
-**Output:**
-```python
-['hello\n', 'python is awesome\n']
+What is the output?
+]
+
+.panel[.panel-name[Answer]
+The output will be a list since readlines returns a list of lines.
+```yaml
+## ['hello\n', 'python is awesome\n']
 ```
 ]
 
