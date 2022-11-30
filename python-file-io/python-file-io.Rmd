@@ -1,0 +1,236 @@
+---
+title: "Python File Handling"
+subtitle: "Open, Close, Read, and Write Operations Made Easier"
+author: 
+  - "Leif Gio Villanueva"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      slideNumberFormat: |  
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      highlightStyle: solarized-light
+      highlightLanguage: ["python"]
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+library(xaringanExtra)
+xaringanExtra::use_panelset()
+
+```
+
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+```{css, echo=FALSE}
+.panelset {
+  --panel-tab-font-family: Work Sans;
+  --panel-tab-background-color-active: #fffbe0;
+  --panel-tab-border-color-active: #023d4d;
+}
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+```
+
+## .big-text[Hello.]
+
+---
+
+background-image: url(images/Whisper.jpg)
+background-size: contain
+
+<div class="word-bubble" style="
+  position: absolute; 
+  text-align: center;
+  width: 50%; 
+  top: 100px;
+  left: 310px;
+  font-size: 1.3em;
+"> Programming will make <br> our lives better. </div>
+
+---
+
+# Activating Prior Knowledge
+
+1. When I want to repeat and automate something I will use?
+
+--
+
+2. The function <mark>**ord()**</mark> will return?
+
+--
+
+3. When and how to use the <mark>**try**</mark> and <mark>**finally**</mark> block?
+
+--
+
+4. How modulo operator works in Python?
+
+---
+
+# Caesar Cipher
+
+---
+
+class: title-slide, center, bottom
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$author`
+
+---
+# Objectives
+
+At the end of the lesson, you will be able to:
+
+1. reconstruct and modify a program with the use of Python concepts.
+
+--
+
+2. perform file handling operations using Python
+
+--
+
+3. internalize the concept of file handling in general
+
+---
+# Files
+Are named locations on disk to store related information.
+
+Used to permanently store data in a non-volatile memory.
+---
+# Types of Files
+
+--
+
+.pull-left[
+## Text Files
+- txt
+
+- csv
+
+- json
+
+- py
+]
+
+--
+
+.pull-right[
+## Binary Files
+- jpg
+
+- png
+
+- mp4
+
+- mp3
+]
+
+---
+
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Opening Files in Python]
+
+---
+## Python has built in <mark>**open()**</mark> to open a file.
+
+.panelset[
+.panel[
+.panel-name[Syntax]
+```{python, eval=FALSE}
+open(file, mode="r")
+```
+- the *file* parameter is required
+
+- *mode* has a default value of read in text
+]
+
+.panel[
+.panel-name[Example]
+```{python, eval=FALSE}
+f = open("test.txt", "w") # write in text mode
+print(f)
+f = open("logo.png", "rb") # read in binary mode
+print(f)
+```
+
+]
+
+.panel[
+.panel-name[Output]
+```{python, eval=FALSE}
+<_io.TextIOWrapper name='test.txt' mode='r' encoding='UTF-8'>
+<_io.BufferedReader name='input.png'>
+```
+]
+
+]
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Closing Files in Python]
+
+---
+
+## Always close the file to free the resources.
+.panelset[
+.panel[
+.panel-name[Basic]
+```{python, eval=FALSE}
+f = open("test.txt", "r")
+# perform all file operations
+f.close()
+```
+]
+
+.panel[
+.panel-name[Safe]
+```{python, eval=FALSE}
+try:
+  f = open("test.txt", "r")
+  # perform all file operations
+finally:
+  f.close
+```
+
+]
+
+.panel[
+.panel-name[Best]
+```{python, eval=FALSE}
+with open("test.txt", "r" as f:)
+  # perform all file operations
+```
+]
+
+]
+
+---
+# File Object Attributes
+```{python, eval=FALSE}
+closed()  # returns true if file is closed, false otherwise
+mode()    # returns the access mode with which file was opened
+name()    # returns the name of the file
+```
