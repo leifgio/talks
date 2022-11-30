@@ -68,7 +68,7 @@ background-size: contain
 
 --
 
-2. The function <mark>**ord()**</mark> will return?
+2. The built-in function <mark>**ord()**</mark> will return?
 
 --
 
@@ -76,7 +76,7 @@ background-size: contain
 
 --
 
-4. How modulo operator works in Python?
+4. How does the modulo '%' operator works in Python?
 
 ---
 
