@@ -140,14 +140,6 @@ a:hover, a:active, a:focus {
   padding-top: 0em;
 }
 
-.pull-left {
-  float: left;
-  width: 52%;
-}
-.pull-right {
-  float: right;
-  width: 42%;
-}
 .pull-right ~ * {
   clear: both;
 }
@@ -569,4 +561,13 @@ h4 {
 
 hr {
   color: #023d4d80;
+}
+
+.pull-left {
+  float: left;
+  width: 57%;
+}
+.pull-right {
+  float: right;
+  width: 37%;
 }

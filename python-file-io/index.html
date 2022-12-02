@@ -9,7 +9,6 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
-    <link href="libs/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/my-theme.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/my-fonts.css" type="text/css" />
@@ -79,15 +78,15 @@ class: title-slide, center, bottom
 # Objectives
 At the end of the lesson, you will be able to:
 
-1. reconstruct and modify a program with the use of Python concepts.
+1. Reconstruct and modify a program with the use of Python concepts.
 
 --
 
-2. perform file handling operations using Python
+2. Perform file handling operations using Python.
 
 --
 
-3. internalize the concept of file handling in general
+3. Internalize the concept of file handling in general.
 ---
 # Files
 Are named locations on disk to store related information.
@@ -224,26 +223,26 @@ file.name    # returns the name of the file
 ```
 
 .panel[.panel-name[Usage]
-.pull-left[
-What you code:
-
-```python
-with open("test.txt", "r") as f:
-  print(f.closed)
-  print(f.mode) 
-  print(f.name)
-```
-]
-
-.pull-right[
-What you get:
-
-```
-## False
-## r
-## test.txt
-```
-]
+  .pull-left[
+  What you code:
+  
+  ```python
+  with open("test.txt", "r") as f:
+    print(f.closed)
+    print(f.mode) 
+    print(f.name)
+  ```
+  ]
+  
+  .pull-right[
+  What you get:
+  
+  ```
+  ## False
+  ## r
+  ## test.txt
+  ```
+  ]
 
 ]
 
@@ -276,24 +275,24 @@ write(n)  # The n parameter is the string to be written on the file.
 
 .panel[.panel-name[Program 01]
 Writing to a file using ***"w"*** mode:
-.pull-left[
-What you code:
-
-```python
-with open("sample.txt", "w") as f:
-  f.write("hello\n")
-  f.write("python is awesome")
-```
-]
-
-.pull-right[
-What you get:
-
-```
-## 6
-## 17
-```
-]
+  .pull-left[
+  What you code:
+  
+  ```python
+  with open("sample.txt", "w") as f:
+    f.write("hello\n")
+    f.write("python is awesome")
+  ```
+  ]
+  
+  .pull-right[
+  What you get:
+  
+  ```
+  ## 6
+  ## 17
+  ```
+  ]
 
 ]
 
@@ -330,26 +329,32 @@ background-size: cover
 ## .big-text[Your Turn]
 ---
 class: center, middle
+background-color: #e6f3fc
 # Question 01
 In **Program 01**, What do you think will happen if ***"sample.txt"*** does not exists in the current directory?
 ---
 class: center, middle
+background-color: #e6f3fc
 # Answer 01
 The program will create a new file named ***"sample.txt"*** in the current directory.
 ---
 class: center, middle
+background-color: #e6f3fc
 # Question 02
 What if there is already an existing file that contains a bunch of string?
 ---
 class: center, middle
+background-color: #e6f3fc
 # Answer 02
 The file will be overwritten.
 ---
 class: center, middle
+background-color: #e6f3fc
 # Question 03
 What is the difference between ***"w"*** and ***"a"*** mode?
 ---
 class: center, middle
+background-color: #e6f3fc
 # Answer 03
 Append mode will add the text at the end of the existing file. While write mode overwrites a file.
 ---
@@ -382,45 +387,44 @@ Let us say in our ***"test.txt"*** we have:
 .panel[.panel-name[read()]
 To read a file in Python, we must open the file in reading ***"r"*** mode.
 
-.pull-left[
-Code:
+  .pull-left[
+  What you code:
+  
+  ```python
+  with open("test.txt", "r") as f:
+    message = f.read()
+    print(message)
+  ```
+  ]
 
-```python
-with open("test.txt", "r") as f:
-  message = f.read()
-  print(message)
-```
+  .pull-right[
+  What you get:
+  
+  ```
+  ## hello
+  ## python is awesome
+  ```
+  ]
 ]
-
-.pull-right[
-Output:
-
-```
-## hello
-## python is awesome
-```
-]
-]
-
 
 .panel[.panel-name[readline()]
-.pull-left[
-Code:
-
-```python
-with open("test.txt", "r") as f:
-  message = f.readline()
-  print(message)
-```
-]
-
-.pull-right[
-Output:
-
-```
-## hello
-```
-]
+  .pull-left[
+  What you code:
+  
+  ```python
+  with open("test.txt", "r") as f:
+    message = f.readline()
+    print(message)
+  ```
+  ]
+  
+  .pull-right[
+  What you get:
+  
+  ```
+  ## hello
+  ```
+  ]
 ]
 
 .panel[.panel-name[readlines()]
@@ -430,7 +434,7 @@ with open("test.txt", "r") as f:
   message = f.readlines()
   print(message)
 ```
-What is the output?
+## .center[What is the output?]
 ]
 
 .panel[.panel-name[Answer]
@@ -457,11 +461,10 @@ background-size: cover
 
 3. Open and read the file.
 
-4. Define a function for encrypting a message.
+4. Define a function that encrypts the message.
 
 5. Write the encrypted message to a new file named *"encrypted.txt"*.
 ---
-
 name: clouds
 class: center, middle
 background-image: url(images/clouds.jpg)
@@ -470,20 +473,105 @@ background-size: cover
 ## .big-text[Your Turn]
 ---
 class: middle, center
+background-color: #e6f3fc
 # Question
 What will you modify in the program to decipher the message?
+
+```python
+chr((ord(letter) + k - 65) % 26 + 65)
+```
 ---
 class: middle, center
+background-color: #e6f3fc
 # Answer
-Change the ***"+"*** operator to ***"+"***.
+Change the ***"+"*** operator to ***"-"***.
+
+```python
+chr((ord(letter) - k - 65) % 26 + 65)
+```
 ---
 class: middle, center
+background-color: #e6f3fc
 # Follow up question
 What if you do not know the encryption key?
 ---
 class: middle, center
+background-color: #e6f3fc
 # Answer
 Automate all the possible encryption key using a loop.
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Review]
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Application]
+---
+class: middle, center
+background-color: #e6f3fc
+# Instruction
+Plan and conceptualize a brute-force Caesar Cipher decryption program.
+Explain on how are you going to code the program.
+---
+class: middle, center
+background-color: #e6f3fc
+# Sample answer
+I will modify... And then iterate... In order to...
+# Rubrics
+
+Terminologies - 4
+
+Correctness   - 3
+
+Grammar       - 3
+
+**Total       - 10**
+
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Short Quiz]
+---
+# Assignment 01
+**Direction:** Search for the following Python File Handling concepts.
+```
+# Python built-in file mode description.
+"r+"
+"a"
+"a+"
+"w+"
+"x"
+```
+---
+# Assignment 02
+**Direction:** Search for the following Python File Handling concepts.
+```
+# Python built-in file methods and attributes description.
+readable()
+seekable()
+truncate()
+seek()
+tell()
+```
+---
+class: middle, center
+background-color: #e6f3fc
+# Take Note
+File accepted: PDF
+
+You are free to use any document properties(font size, font-family, etc.) as long as it is readable.
+
+Submission of assignment is on Friday December 16, 2022, until 12:00pm only.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
