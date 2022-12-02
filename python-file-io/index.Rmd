@@ -16,24 +16,23 @@ output:
           </div>
         </div>
       highlightStyle: solarized-light
-      highlightLanguage: ["python", "yaml"]
+      highlightLanguage: ["python"]
       highlightLines: true
       ratio: 16:9
       countIncrementalSlides: false
 ---
-
-```{r setup, include=FALSE}
+```{r setup, include=F}
 library(xaringanExtra)
 xaringanExtra::use_panelset()
-
+xaringanExtra::use_animate_css()
+xaringanExtra::use_extra_styles()
 ```
-
 name: clouds
 class: center, middle
 background-image: url(images/clouds.jpg)
 background-size: cover
 
-```{css, echo=FALSE}
+```{css, echo=F}
 .panelset {
   --panel-tab-font-family: Work Sans;
   --panel-tab-background-color-active: #fffbe0;
@@ -137,7 +136,7 @@ background-size: cover
 .panel[
 Python has built-in <mark>**open()**</mark> function to open a file.
 .panel-name[Syntax]
-```{python, eval=FALSE}
+```{python, eval=F}
 open(file, mode="r")
 ```
 - the *file* parameter is required
@@ -146,7 +145,7 @@ open(file, mode="r")
 ]
 
 .panel[.panel-name[File Parameter]
-```{python, eval=FALSE}
+```{python, eval=F}
 f = open("test.txt") # Open file in relative path
 f = open("/home/lab4/test.txt") # Open file in absolute path
 ```
@@ -156,7 +155,7 @@ f = open("/home/lab4/test.txt") # Open file in absolute path
 .panel-name[File and Mode Parameter]
 Let us say we have a ***"test.txt"*** and ***"logo.png"*** in the current directory
 .panel-name[Example]
-```{python, eval=TRUE}
+```{python, eval=T}
 f = open("test.txt", "r") # read in text mode
 print(f)
 f = open("logo.png", "rb") # read in binary mode
@@ -176,7 +175,7 @@ background-size: cover
 .panelset[
 .panel[
 .panel-name[Basic]
-```{python, eval=FALSE}
+```{python, eval=F}
 f = open("test.txt", "r")
 # perform all file operations
 f.close()
@@ -185,7 +184,7 @@ f.close()
 
 .panel[
 .panel-name[Safe]
-```{python, eval=FALSE}
+```{python, eval=F}
 try:
   f = open("test.txt", "r")
   # perform all file operations
@@ -197,7 +196,7 @@ finally:
 
 .panel[
 .panel-name[Best]
-```{python, eval=FALSE}
+```{python, eval=F}
 with open("test.txt", "r") as f:
   # perform all file operations
 ```
@@ -209,20 +208,31 @@ with open("test.txt", "r") as f:
 .panelset[
 
 .panel[.panel-name[Attributes]
-```{python, eval=FALSE}
+```{python,fileAttrib, eval=F}
 file.closed  # returns true if file is closed, false otherwise
 file.mode    # returns the access mode with which file was opened
 file.name    # returns the name of the file
 ```
 
 .panel[.panel-name[Usage]
-```{python, eval=TRUE}
+.pull-left[
+What you code:
+```{python, usage, eval=F}
 with open("test.txt", "r") as f:
   print(f.closed)
   print(f.mode) 
   print(f.name)
 ```
 ]
+
+.pull-right[
+What you get:
+```{python, usage, echo=F}
+```
+]
+
+]
+
 
 ]
 ]
@@ -237,23 +247,34 @@ background-size: cover
 
 .panel[.panel-name[Modes & Method]
 In order to write into a file we need to specify a mode.
-```{python, eval=FALSE}
+```{python, eval=F}
 "w" # write mode
 "a" # append mode
 ```
 Writing a string is done using this method:
-```{python, eval=FALSE}
+```{python, eval=F}
 write(n)  # The n parameter is the string to be written on the file.
+# This will also return the number of characters written to a file.
 ```
 ]
 
 .panel[.panel-name[Program 01]
 Writing to a file using ***"w"*** mode:
-```{python, eval=FALSE}
+.pull-left[
+What you code:
+```{python, program01, eval=F}
 with open("sample.txt", "w") as f:
   f.write("hello\n")
   f.write("python is awesome")
 ```
+]
+
+.pull-right[
+What you get:
+```{python, program01, echo=F}
+```
+]
+
 ]
 
 .panel[.panel-name[Result 01]
@@ -265,7 +286,7 @@ In our file ***"sample.txt"*** we will see:
 ]
 .panel[.panel-name[Program 02]
 Writing to a file using ***"a"*** mode:
-```{python, eval=FALSE}
+```{python, eval=F}
 with open("sample.txt", "a") as f:
   f.write("This will be added to the end of the file")
 ```
@@ -320,7 +341,7 @@ background-size: cover
 .panelset[
 
 .panel[.panel-name[Methods]
-```{python, eval=FALSE}
+```{python, eval=F}
 read(n)     # reads at most n characters from a file.
             # Reads till the end of file if n is None
 readline()  # reads and return one line from a file
@@ -339,23 +360,42 @@ Let us say in our ***"test.txt"*** we have:
 .panel[.panel-name[read()]
 To read a file in Python, we must open the file in reading ***"r"*** mode.
 
-```{python, eval=TRUE}
+.pull-left[
+Code:
+```{python, read, eval=F}
 with open("test.txt", "r") as f:
   message = f.read()
   print(message)
 ```
 ]
 
+.pull-right[
+Output:
+```{python, read, echo=F}
+```
+]
+]
+
+
 .panel[.panel-name[readline()]
-```{python, eval=TRUE}
+.pull-left[
+Code:
+```{python, readline, eval=F}
 with open("test.txt", "r") as f:
   message = f.readline()
   print(message)
 ```
 ]
 
+.pull-right[
+Output:
+```{python, readline, echo=F}
+```
+]
+]
+
 .panel[.panel-name[readlines()]
-```{python, eval=FALSE}
+```{python, readlines, eval=F}
 with open("test.txt", "r") as f:
   message = f.readlines()
   print(message)
@@ -365,9 +405,50 @@ What is the output?
 
 .panel[.panel-name[Answer]
 The output will be a list since readlines returns a list of lines.
-```yaml
-## ['hello\n', 'python is awesome\n']
+```{python, readlines, echo=F}
 ```
 ]
 
 ]
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Coding Caesar Cipher]
+---
+# Parts of the Program
+1. Ask user for file name.
+
+2. Ask user for encryption key.
+
+3. Open and read the file.
+
+4. Define a function for encrypting a message.
+
+5. Write the encrypted message to a new file named *"encrypted.txt"*.
+---
+
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+## .big-text[Your Turn]
+---
+class: middle, center
+# Question
+What will you modify in the program to decipher the message?
+---
+class: middle, center
+# Answer
+Change the ***"+"*** operator to ***"+"***.
+---
+class: middle, center
+# Follow up question
+What if you do not know the encryption key?
+---
+class: middle, center
+# Answer
+Automate all the possible encryption key using a loop.

@@ -1,3 +1,7 @@
+mark{
+  background-color: #096B7288;
+}
+
 .remark-slide-content p, ul, ol, li {
   font-size: 1.6rem;
 }
@@ -138,11 +142,11 @@ a:hover, a:active, a:focus {
 
 .pull-left {
   float: left;
-  width: 47%;
+  width: 52%;
 }
 .pull-right {
   float: right;
-  width: 47%;
+  width: 42%;
 }
 .pull-right ~ * {
   clear: both;
