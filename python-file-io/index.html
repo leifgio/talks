@@ -4,12 +4,14 @@
     <title>Python File Handling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Leif Gio Villanueva" />
-    <meta name="date" content="2022-12-02" />
+    <meta name="date" content="2022-12-09" />
     <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
     <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link href="libs/countdown-0.4.0/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown-0.4.0/countdown.js"></script>
     <link rel="stylesheet" href="assets/css/my-theme.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/my-fonts.css" type="text/css" />
   </head>
@@ -48,6 +50,12 @@ background-size: contain
 "&gt; Like &lt;b&gt;Mathematics, Programming&lt;/b&gt; will also make our lives better. &lt;/div&gt;
 
 ---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+## .big-text[Caesar Cipher]
+---
 # Activating Prior Knowledge
 1. When I want to repeat and automate something I will use?
 
@@ -63,15 +71,7 @@ background-size: contain
 
 4. How does the modulo '%' operator works in Python?
 ---
-name: clouds
-class: center, middle
-background-image: url(images/clouds.jpg)
-background-size: cover
-## .big-text[Caesar Cipher]
-
----
 class: title-slide, center, bottom
-
 # Python File Handling
 ## Open, Close, Read, and Write Operations Made Easier
 ---
@@ -461,9 +461,59 @@ background-size: cover
 
 3. Open and read the file.
 
-4. Define a function that encrypts the message.
+4. Define a function that encrypts the message using the encryption key.
 
-5. Write the encrypted message to a new file named *"encrypted.txt"*.
+5. Define a function that writes the encrypted message to a new file named *"encrypted.txt"*.
+---
+## Step 1 and 2
+
+```python
+# Ask User for file name
+fileName = input("Enter the file name: ")
+# Ask user for encryption key
+key = int(input("Enter encrpytion key: "))
+```
+## Step 3
+
+```python
+# Open and read the file
+with open(fileName) as f:
+  message = f.read.strip()
+```
+---
+## Step 4
+
+```python
+# Define a function that encrypts
+# the message using the encryption key.
+def encrypt(msg, k):
+    newText = ""
+    for letter in msg:
+        if letter.isupper():
+            newText += chr((ord(letter) + k - 65) % 26 + 65)
+        elif letter.islower():
+            newText += chr((ord(letter) + k - 97) % 26 + 97)
+        else:
+            newText += letter
+    return newText
+```
+---
+## Step 5
+
+```python
+# Define a function that writes the encrypted
+# message to a new file named "encrypted.txt".
+def writeFile(msg):
+    with open("encrypted.txt","w") as f:
+        f.write(msg)
+```
+# Finally
+
+```python
+# Use the code all together
+encryptedText = encrypt(message, key)
+writeFile(encryptedText)
+```
 ---
 name: clouds
 class: center, middle
@@ -516,9 +566,11 @@ background-size: cover
 ---
 class: middle, center
 background-color: #e6f3fc
-# Instruction
+## Instruction
 Plan and conceptualize a brute-force Caesar Cipher decryption program.
 Explain on how are you going to code the program.
+## Deadline
+Today at **4:59pm** only
 ---
 class: middle, center
 background-color: #e6f3fc
@@ -542,10 +594,43 @@ background-size: cover
 
 ## .big-text[Short Quiz]
 ---
-# Assignment 01
-**Direction:** Search for the following Python File Handling concepts.
+class: center, middle
+background-color: #e6f3fc
+# Quiz ends in
+
+<div class="countdown" id="timer_838bab9e" data-update-every="1" tabindex="0" style="right:27%;bottom:7%;font-size:6em;">
+<div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+---
+class: center, middle
+background-color: #e6f3fc
+# Answers
+
+--
+
+## 1. C
+
+--
+
+## 2. A
+
+--
+
+## 3. A
+
+--
+
+## 4. C
+
+--
+
+## 5. D
+---
+# Follow-up Assignment
+**Direction:** Search for the definition of the
+following Python built-in file mode description 
 ```
-# Python built-in file mode description.
 "r+"
 "a"
 "a+"
@@ -553,8 +638,9 @@ background-size: cover
 "x"
 ```
 ---
-# Assignment 02
-**Direction:** Search for the following Python File Handling concepts.
+# Advance Assignment
+**Direction:** Search for the definition of the
+following Python file methods and attributes
 ```
 # Python built-in file methods and attributes description.
 readable()
@@ -570,15 +656,21 @@ background-color: #e6f3fc
 File accepted: PDF
 
 You are free to use any document properties(font size, font-family, etc.) as long as it is readable.
+---
+class: middle, center
+background-color: #e6f3fc
 
-Submission of assignment is on Friday December 16, 2022, until 12:00pm only.
+## When
+Submission of assignment is on **Friday December 16, 2022**, until **12:00pm** only.
+## Where
+**Assignment 01** and **Assignment 02** on Canvas LMS.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
 "highlightStyle": "solarized-light",
-"highlightLanguage": "python",
+"highlightLanguage": ["python", "r"],
 "highlightLines": true,
 "ratio": "16:9",
 "countIncrementalSlides": false

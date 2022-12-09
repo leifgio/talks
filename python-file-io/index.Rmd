@@ -16,7 +16,7 @@ output:
           </div>
         </div>
       highlightStyle: solarized-light
-      highlightLanguage: ["python"]
+      highlightLanguage: ["python","r"]
       highlightLines: true
       ratio: 16:9
       countIncrementalSlides: false
@@ -25,6 +25,7 @@ output:
 library(xaringanExtra)
 xaringanExtra::use_panelset()
 xaringanExtra::use_extra_styles()
+library(countdown)
 ```
 name: clouds
 class: center, middle
@@ -57,6 +58,12 @@ background-size: contain
 "> Like <b>Mathematics, Programming</b> will also make our lives better. </div>
 
 ---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+## .big-text[Caesar Cipher]
+---
 # Activating Prior Knowledge
 1. When I want to repeat and automate something I will use?
 
@@ -72,15 +79,7 @@ background-size: contain
 
 4. How does the modulo '%' operator works in Python?
 ---
-name: clouds
-class: center, middle
-background-image: url(images/clouds.jpg)
-background-size: cover
-## .big-text[Caesar Cipher]
-
----
 class: title-slide, center, bottom
-
 # `r rmarkdown::metadata$title`
 ## `r rmarkdown::metadata$subtitle`
 ---
@@ -429,9 +428,54 @@ background-size: cover
 
 3. Open and read the file.
 
-4. Define a function that encrypts the message.
+4. Define a function that encrypts the message using the encryption key.
 
-5. Write the encrypted message to a new file named *"encrypted.txt"*.
+5. Define a function that writes the encrypted message to a new file named *"encrypted.txt"*.
+---
+## Step 1 and 2
+```{python, eval=F}
+# Ask User for file name
+fileName = input("Enter the file name: ")
+# Ask user for encryption key
+key = int(input("Enter encrpytion key: "))
+```
+## Step 3
+```{python, eval=F}
+# Open and read the file
+with open(fileName) as f:
+  message = f.read.strip()
+```
+---
+## Step 4
+```{python, eval=F}
+# Define a function that encrypts
+# the message using the encryption key.
+def encrypt(msg, k):
+    newText = ""
+    for letter in msg:
+        if letter.isupper():
+            newText += chr((ord(letter) + k - 65) % 26 + 65)
+        elif letter.islower():
+            newText += chr((ord(letter) + k - 97) % 26 + 97)
+        else:
+            newText += letter
+    return newText
+```
+---
+## Step 5
+```{python, eval=F}
+# Define a function that writes the encrypted
+# message to a new file named "encrypted.txt".
+def writeFile(msg):
+    with open("encrypted.txt","w") as f:
+        f.write(msg)
+```
+# Finally
+```{python, eval=F}
+# Use the code all together
+encryptedText = encrypt(message, key)
+writeFile(encryptedText)
+```
 ---
 name: clouds
 class: center, middle
@@ -482,9 +526,11 @@ background-size: cover
 ---
 class: middle, center
 background-color: #e6f3fc
-# Instruction
+## Instruction
 Plan and conceptualize a brute-force Caesar Cipher decryption program.
 Explain on how are you going to code the program.
+## Deadline
+Today at **4:59pm** only
 ---
 class: middle, center
 background-color: #e6f3fc
@@ -508,10 +554,42 @@ background-size: cover
 
 ## .big-text[Short Quiz]
 ---
-# Assignment 01
-**Direction:** Search for the following Python File Handling concepts.
+class: center, middle
+background-color: #e6f3fc
+# Quiz ends in
+
+```{r, echo=F}
+countdown(minutes = 5, font_size = "6em", right = "27%", bottom = "7%")
 ```
-# Python built-in file mode description.
+---
+class: center, middle
+background-color: #e6f3fc
+# Answers
+
+--
+
+## 1. C
+
+--
+
+## 2. A
+
+--
+
+## 3. A
+
+--
+
+## 4. C
+
+--
+
+## 5. D
+---
+# Follow-up Assignment
+**Direction:** Search for the definition of the
+following Python built-in file mode description 
+```
 "r+"
 "a"
 "a+"
@@ -519,8 +597,9 @@ background-size: cover
 "x"
 ```
 ---
-# Assignment 02
-**Direction:** Search for the following Python File Handling concepts.
+# Advance Assignment
+**Direction:** Search for the definition of the
+following Python file methods and attributes
 ```
 # Python built-in file methods and attributes description.
 readable()
@@ -536,5 +615,11 @@ background-color: #e6f3fc
 File accepted: PDF
 
 You are free to use any document properties(font size, font-family, etc.) as long as it is readable.
+---
+class: middle, center
+background-color: #e6f3fc
 
-Submission of assignment is on Friday December 16, 2022, until 12:00pm only.
+## When
+Submission of assignment is on **Friday December 16, 2022**, until **12:00pm** only.
+## Where
+**Assignment 01** and **Assignment 02** on Canvas LMS.
