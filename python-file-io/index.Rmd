@@ -443,7 +443,7 @@ key = int(input("Enter encrpytion key: "))
 ```{python, eval=F}
 # Open and read the file
 with open(fileName) as f:
-  message = f.read.strip()
+  message = f.read().strip()
 ```
 ---
 ## Step 4
