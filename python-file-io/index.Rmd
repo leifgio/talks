@@ -69,10 +69,6 @@ background-size: cover
 
 --
 
-2. The built-in function <mark>**ord()**</mark> will return?
-
---
-
 3. When and how to use the <mark>**try**</mark> and <mark>**finally**</mark> block?
 
 --
@@ -95,11 +91,6 @@ At the end of the lesson, you will be able to:
 --
 
 3. Internalize the concept of file handling in general.
----
-# Files
-Are named locations on disk to store related information.
-
-Used to permanently store data in a non-volatile memory.
 ---
 # Types of Files
 
@@ -142,22 +133,13 @@ open(file, mode="r")
 - *mode* has a default value of read in text
 ]
 
-.panel[.panel-name[File Parameter]
-```{python, eval=F}
-f = open("test.txt") # Open file in relative path
-f = open("/home/lab4/test.txt") # Open file in absolute path
-```
-]
-
 .panel[
 .panel-name[File and Mode Parameter]
 Let us say we have a ***"test.txt"*** and ***"logo.png"*** in the current directory
 .panel-name[Example]
-```{python, eval=T}
+```{python, eval=F}
 f = open("test.txt", "r") # read in text mode
-print(f)
 f = open("logo.png", "rb") # read in binary mode
-print(f)
 ```
 ]
 
@@ -256,7 +238,7 @@ write(n)  # The n parameter is the string to be written on the file.
 ```
 ]
 
-.panel[.panel-name[Program 01]
+.panel[.panel-name[Program]
 Writing to a file using ***"w"*** mode:
   .pull-left[
   What you code:
@@ -275,26 +257,11 @@ Writing to a file using ***"w"*** mode:
 
 ]
 
-.panel[.panel-name[Result 01]
+.panel[.panel-name[Result]
 In our file ***"sample.txt"*** we will see:
 >hello
 
 >python is awesome
-
-]
-.panel[.panel-name[Program 02]
-Writing to a file using ***"a"*** mode:
-```{python, eval=F}
-with open("sample.txt", "a") as f:
-  f.write("This will be added to the end of the file")
-```
-]
-
-.panel[.panel-name[Result 02]
-In our file ***"sample.txt"*** we will see:
->hello
-
->python is awesomeThis will be added to the end of the file
 
 ]
 
@@ -309,7 +276,7 @@ background-size: cover
 class: center, middle
 background-color: #e6f3fc
 # Question 01
-In **Program 01**, What do you think will happen if ***"sample.txt"*** does not exists in the current directory?
+In the **Program**, What do you think will happen if ***"sample.txt"*** does not exists in the current directory?
 ---
 class: center, middle
 background-color: #e6f3fc
@@ -395,21 +362,6 @@ To read a file in Python, we must open the file in reading ***"r"*** mode.
   ```{python, readline, echo=F}
   ```
   ]
-]
-
-.panel[.panel-name[readlines()]
-```{python, readlines, eval=F}
-with open("test.txt", "r") as f:
-  message = f.readlines()
-  print(message)
-```
-## .center[What is the output?]
-]
-
-.panel[.panel-name[Answer]
-The output will be a list since readlines returns a list of lines.
-```{python, readlines, echo=F}
-```
 ]
 
 ]
