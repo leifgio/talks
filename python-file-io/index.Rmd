@@ -56,7 +56,17 @@ background-size: contain
   left: 310px;
   font-size: 1.3em;
 "> Like <b>Mathematics, Programming</b> will also make our lives better. </div>
+---
+# Activating Prior Knowledge
+1. When I want to repeat and automate something I will use?
 
+--
+
+2. When and how to use the <mark>**try**</mark> and <mark>**finally**</mark> block?
+
+--
+
+3. How does the modulo '%' operator works in Python?
 ---
 name: clouds
 class: center, middle
@@ -64,16 +74,14 @@ background-image: url(images/clouds.jpg)
 background-size: cover
 ## .big-text[Caesar Cipher]
 ---
-# Activating Prior Knowledge
-1. When I want to repeat and automate something I will use?
+class: center, middle
+background-color: #e6f3fc
 
---
-
-3. When and how to use the <mark>**try**</mark> and <mark>**finally**</mark> block?
-
---
-
-4. How does the modulo '%' operator works in Python?
+You will be assigned to a partner.
+One of you will encode a secret message
+using the encoding algorithm given.
+Your partner will observe on how you encode.
+And then we will talk about your experiences in the activity.
 ---
 class: title-slide, center, bottom
 # `r rmarkdown::metadata$title`
