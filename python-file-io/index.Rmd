@@ -144,7 +144,6 @@ open(file, mode="r")
 .panel[
 .panel-name[File and Mode Parameter]
 Let us say we have a ***"test.txt"*** and ***"logo.png"*** in the current directory
-.panel-name[Example]
 ```{python, eval=F}
 f = open("test.txt", "r") # read in text mode
 f = open("logo.png", "rb") # read in binary mode
