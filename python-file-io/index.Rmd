@@ -391,7 +391,7 @@ key = int(input("Enter encrpytion key: "))
 ## Step 3
 ```{python, eval=F}
 # Open and read the file
-with open(fileName) as f:
+with open(fileName, "r") as f:
   message = f.read().strip()
 ```
 ---
