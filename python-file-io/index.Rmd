@@ -241,27 +241,17 @@ In order to write into a file we need to specify a mode.
 Writing a string is done using this method:
 ```{python, eval=F}
 write(n)  # The n parameter is the string to be written on the file.
-# This will also return the number of characters written to a file.
 ```
 ]
 
 .panel[.panel-name[Program]
 Writing to a file using ***"w"*** mode:
-  .pull-left[
   What you code:
   ```{python, program01, eval=F}
   with open("sample.txt", "w") as f:
     f.write("hello\n")
     f.write("python is awesome")
   ```
-  ]
-  
-  .pull-right[
-  What you get:
-  ```{python, program01, echo=F}
-  ```
-  ]
-
 ]
 
 .panel[.panel-name[Result]
