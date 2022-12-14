@@ -215,7 +215,7 @@
     const initPanelSet = (panelset, idx) => {
       let panels = Array.from(panelset.querySelectorAll('.panel'))
       if (!panels.length && panelset.matches('.section[class*="level"]')) {
-        // we're in tabset-alike R Markdown
+        // we're in tabset-alike R Marknn
         const panelsetLevel = [...panelset.classList]
           .filter(s => s.match(/^level/))[0]
           .replace('level', '')
