@@ -215,7 +215,7 @@
     const initPanelSet = (panelset, idx) => {
       let panels = Array.from(panelset.querySelectorAll('.panel'))
       if (!panels.length && panelset.matches('.section[class*="level"]')) {
-        // we're in tabset-alike R Markdown
+        // we're in tabset-alike R Marknn
         const panelsetLevel = [...panelset.classList]
           .filter(s => s.match(/^level/))[0]
           .replace('level', '')
@@ -259,11 +259,11 @@
           if (ev.code === 'Space' || ev.code === 'Enter') {
             togglePanel(ev.target)
             ev.stopPropagation()
-          } else if (ev.code === 'ArrowUp' && self.previousSibling) {
+          } else if (ev.code === 'ArrowLeft' && self.previousSibling) {
             togglePanel(self.previousSibling)
             self.previousSibling.focus()
             ev.stopPropagation()
-          } else if (ev.code === 'ArrowDown' && self.nextSibling) {
+          } else if (ev.code === 'ArrowRight' && self.nextSibling) {
             togglePanel(self.nextSibling)
             self.nextSibling.focus()
             ev.stopPropagation()
