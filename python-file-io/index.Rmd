@@ -562,7 +562,7 @@ class: middle, center
 background-color: #e6f3fc
 
 ## When
-Submission of assignment is on **Friday December 16, 2022**, until **12:00pm** only.
+Submission of assignment is on **Friday December 16, 2022**, until **4:59pm** only.
 ## Where
 **Assignment 01** and **Assignment 02** on Canvas LMS.
 ---

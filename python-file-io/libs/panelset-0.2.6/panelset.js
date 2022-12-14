@@ -259,11 +259,11 @@
           if (ev.code === 'Space' || ev.code === 'Enter') {
             togglePanel(ev.target)
             ev.stopPropagation()
-          } else if (ev.code === 'PageUp' && self.previousSibling) {
+          } else if (ev.code === 'ArrowLeft' && self.previousSibling) {
             togglePanel(self.previousSibling)
             self.previousSibling.focus()
             ev.stopPropagation()
-          } else if (ev.code === 'PageDown' && self.nextSibling) {
+          } else if (ev.code === 'ArrowRight' && self.nextSibling) {
             togglePanel(self.nextSibling)
             self.nextSibling.focus()
             ev.stopPropagation()
