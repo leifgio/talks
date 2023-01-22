@@ -1,0 +1,56 @@
+---
+title: "15 Must-Follow Teaching Strategies For Digital Classroom"
+subtitle: "Educational Technology"
+author: "Leif Gio Villanueva"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+# Use Mobile Learning and Social Media to Create A Community
+<img src="https://images.unsplash.com/photo-1608106055806-e892769d2e5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" height=400px>
+---
+# Embrace a Philosophy of Formative Assessment
+<img src="https://images.unsplash.com/photo-1665247238133-6235ac1d745e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80" height=400px>
+---
+# Put Communication and Clarity First
+<img src="https://images.unsplash.com/photo-1565598571120-4081876df4f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height=450px>
+---
+# Take Advantage of E-books and Digital Content
+<img src="https://images.unsplash.com/photo-1455541504462-57ebb2a9cec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height=400px>
+---
+# Encourage Handwritten Notes
+<img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height=400px>
+---
+# Upload Online Lectures
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWaIhxYSGWKY%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=82ef461d430ab65635d9afe066b285d6345d7db7bd953156a6c60bbfd53b4f92&ipo=images" height=450px>
+---
+# Personalize Instruction
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thoughtco.com%2Fthmb%2FoqKDmbbShIkrHH74SUPtGpHQJnM%3D%2F768x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Fsb10065747ab-001-56a563be3df78cf772880e09.jpg&f=1&nofb=1&ipt=71d1ca664fcd9e4ef540964aa828e1d8a154796754d94154464e184f6ca8f8e1&ipo=images" height=450px>
+---
+# Have Brainstorming Sessions in Class
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height=450px>
+---
+# Incorporate Interactive Learning
+<img src="https://www.howtogeek.com/wp-content/uploads/2021/06/Raise-Hand-button-turns-White-And-Raised-Hand-icon-Appears-in-Video-Preview.png?trim=1,1&bg-color=000&pad=1,1" height=450px>
+---
+# Take the Learning Process Outside of the Classroom
+<img src="https://images.unsplash.com/photo-1565084895732-c379ab5c6294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80" height=400px>
+---
+# Establish Peer-Assisted Learning
+<img src="https://images.unsplash.com/photo-1610500796385-3ffc1ae2f046?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" height=400px>
+---
+# Diversify Projects
+<img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" height=400px>
+---
+# Restructure the Classroom
+<img src="https://images.unsplash.com/photo-1652620364162-4c0a3387a0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" height=400px>
+---
+# Give Breaks
+<img src="https://c.stocksy.com/a/S6DA00/z9/2433652.jpg" height=400px>
+---
+# Seamless Integration and Management
+<img src="https://tist.school/wp-content/uploads/2019/06/technology-integration-in-schools.jpeg" height=400px>
