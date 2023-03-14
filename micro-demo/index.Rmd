@@ -1,0 +1,170 @@
+---
+title: "Javascript Variables and Arithmetic"
+subtitle: "Using your prior knowledge in Algebra"
+author: 
+  - "Leif Gio Villanueva"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/css/my-theme.css", "assets/css/my-fonts.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      slideNumberFormat: |  
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      highlightStyle: solarized-light
+      highlightLanguage: ["python","r"]
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+```{r setup, include=F}
+library(xaringanExtra)
+xaringanExtra::use_panelset()
+xaringanExtra::use_extra_styles()
+```
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+
+```{css, echo=F}
+.panelset {
+  --panel-tab-font-family: Work Sans;
+  --panel-tab-background-color-active: #fffbe0;
+  --panel-tab-border-color-active: #023d4d;
+}
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+```
+
+## .big-text[Hello.]
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+## .big-text[Knock knock!]
+---
+background-image: url(images/Whisper.jpg)
+background-size: contain
+
+<div class="word-bubble" style="
+  position: absolute; 
+  text-align: center;
+  width: 50%; 
+  top: 120px;
+  left: 310px;
+  font-size: 1.3em;
+"> Nevermind, it's <b>pointless</b>.</div>
+---
+# Activating Prior Knowledge
+1. What symbol is used to end a Javascript statement?
+
+--
+
+2. How do you indicate a single line comment in Javascript?
+
+---
+name: clouds
+class: center, middle
+background-image: url(images/clouds.jpg)
+background-size: cover
+## .big-text[Word Cloud]
+---
+class: center, middle
+background-color: #e6f3fc
+
+.medium-text[Construct a simple algebraic expression using the words and symbols provided.]
+
+--
+
+.medium-text[You have five minutes to brainstorm with your group (by row).]
+
+--
+
+.medium-text[One representative will arrange the words on the board.]
+---
+class: title-slide, center, bottom
+# `r rmarkdown::metadata$title`
+## `r rmarkdown::metadata$subtitle`
+---
+# Objectives
+At the end of the lesson, you will be able to:
+
+1. Know the characteristics of Javascript variables.
+
+--
+
+2. Perform the declaration of variables and basic arithmetic using Javascript.
+
+--
+
+3. Internalize the concept of variables in programming.
+---
+
+# Variable Declaration Syntax
+.medium-text[*keyword – identifier – assignment operator – value;*]
+---
+# Four Ways to Declare a Javascript Variable
+- Using **var**
+
+- Using **let**
+
+- Using **const**
+
+- Using nothing
+---
+# Characteristics of Variable Identifier/Name
+- Case sensitive
+
+- Must beign with a letter, “$”, or “_”
+
+- Name can contain letters, digits, “$”, and “_"
+
+- Space is not allowed in variable identifiers/name
+
+- Javascript keywords cannot be used as identifier/name
+---
+# Javascript Assignment Operator
+
+In Javascript, the equal sign ( = ) is an "assignment" operator. This  is  different  in  algebra  where  the  equal  sign  is  "equal  to" operator.
+---
+# Javascript Values
+- Values can hold numbers and text values.
+
+- In programming, text values are called string.
+
+- Strings are written inside double quotes while numbers are
+written without quotes
+---
+# Undefined Value
+In computer program, variables are often declared without value. The
+value can be something that has to be calculated, or something will
+be provided later, like user input.
+
+A variable declared without a value will have the value undefined.
+---
+# Javascript Arithmetic
+The  same  with  algebra,  you  can  do  arithmetic  with  javascript
+variables, using arithmetic operators ( +, -, /, * ).
+---
+# Follow-up Assignment
+
+Plan and conceptualize a Body Mass Index (BMI) Calculator program.You only need to identify all the variables needed in the program.
+
+Write your answers on a sheet of yellow pad, including your name and section on the top of the paper.
+
+**Deadline:** Friday, March 17, 2023 until 4:59pm only.
+---
+# Advance Assingment
+
+Search the difference of const with var and let. Keeep your answers short, up to one paragraph only.
+
+The task will be assigned on Google Classroom. You only need to comment your answers.
+
+Submission of assignment is on Friday March 17, 2023, until 5:59 pm only.
